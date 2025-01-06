@@ -11,7 +11,7 @@ func main() {
 	var Numtries int
 	fmt.Println("Enter the maximum number of tries : ")
 	fmt.Scan(&Numtries)
-	var score int
+	var score int = Numtries
 
 	var difficulty int
 	fmt.Println("Enter Wanted difficulty 0 for easy: 1-50 , 1 for Medium: 1-100 ,2 for Hard: 1-200")
@@ -48,12 +48,12 @@ func main() {
 			fmt.Printf("Not a valid number , Try again with a number between 0 and %d ( inclusive)", max)
 			i--
 		} else if userguess < goal && i < Numtries {
-			fmt.Printf("Your guess is too low , Try again :")
+			fmt.Printf("Your guess is too low , Try again : ")
 		} else if userguess > goal && i < Numtries {
 			fmt.Printf("Your guess is too high , Try again : ")
 		} else if userguess == goal {
 			score = min(score, i)
-			fmt.Printf("Your guess is right and the number of attempts now is : %d ", i)
+			fmt.Printf("Your guess is right and the number of attempts now is : %d \n ", i)
 			fmt.Printf("Your highest score now is : %d ", score)
 			var tryAgain string
 			fmt.Scan(&tryAgain)
