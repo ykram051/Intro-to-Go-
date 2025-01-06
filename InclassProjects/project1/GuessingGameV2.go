@@ -56,6 +56,7 @@ func main() {
 			fmt.Printf("Your guess is right and the number of attempts now is : %d \n ", i)
 			fmt.Printf("Your highest score now is : %d ", score)
 			var tryAgain string
+			fmt.Print("Do you want to try again ? enter y for yes and n for no ")
 			fmt.Scan(&tryAgain)
 			switch tryAgain {
 			case "y":
@@ -64,7 +65,7 @@ func main() {
 				fmt.Printf("GoodBye")
 
 			}
-			break
+
 		} else if i == Numtries {
 			var tryAgain string
 			fmt.Printf("Your number of guesses is up , You lost , Do you want to try again ? enter y for yes and n for no ")
