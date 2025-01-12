@@ -359,7 +359,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
 
-  /reports:
+  /report:
     get:
       summary: Retrieve sales reports within a specified date range
       tags:
