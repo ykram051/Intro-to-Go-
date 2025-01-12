@@ -21,9 +21,6 @@ cd '.\Final Project\'
 ### 3. Install Dependencies
 Use `go mod` to install project dependencies:
 
-```bash
-go mod tidy
-```
 
 ### 4. Run the Server
 Run the API server with:
