@@ -1,0 +1,87 @@
+{
+  "1": {
+    "id": 1,
+    "title": "1984",
+    "author": {
+      "id": 4,
+      "first_name": "George",
+      "last_name": "Orwell",
+      "bio": ""
+    },
+    "genres": [
+      "Dystopian",
+      "Political Fiction"
+    ],
+    "published_at": "1949-06-08T00:00:00Z",
+    "price": 9.99,
+    "stock": 8
+  },
+  "2": {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": {
+      "id": 2,
+      "first_name": "Harper",
+      "last_name": "Lee",
+      "bio": ""
+    },
+    "genres": [
+      "Fiction",
+      "Southern Gothic"
+    ],
+    "published_at": "1960-07-11T00:00:00Z",
+    "price": 12.99,
+    "stock": 12
+  },
+  "3": {
+    "id": 3,
+    "title": "Brave New World",
+    "author": {
+      "id": 3,
+      "first_name": "Aldous",
+      "last_name": "Huxley",
+      "bio": ""
+    },
+    "genres": [
+      "Science Fiction",
+      "Dystopian"
+    ],
+    "published_at": "1932-08-31T00:00:00Z",
+    "price": 15.99,
+    "stock": 11
+  },
+  "4": {
+    "id": 4,
+    "title": "1984",
+    "author": {
+      "id": 5,
+      "first_name": "",
+      "last_name": "",
+      "bio": ""
+    },
+    "genres": [
+      "Dystopian",
+      "Political Fiction"
+    ],
+    "published_at": "1949-06-08T00:00:00Z",
+    "price": 9.99,
+    "stock": 10
+  },
+  "5": {
+    "id": 5,
+    "title": "1984",
+    "author": {
+      "id": 6,
+      "first_name": "George",
+      "last_name": "Orwell",
+      "bio": "English novelist and essayist, known for '1984' and 'Animal Farm'."
+    },
+    "genres": [
+      "Dystopian",
+      "Political Fiction"
+    ],
+    "published_at": "1949-06-08T00:00:00Z",
+    "price": 9.99,
+    "stock": 10
+  }
+}
