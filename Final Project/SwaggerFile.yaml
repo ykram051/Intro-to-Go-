@@ -338,6 +338,43 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorResponse'
   /orders/{id}:
+    put:
+      summary: Update an existing order
+      tags:
+        - Orders
+      parameters:
+        - name: id
+          in: path
+          description: ID of the order to update
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Updated order object
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        '200':
+          description: Order updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid input or insufficient stock
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: Order not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
     delete:
       summary: Cancel an order
       tags:
