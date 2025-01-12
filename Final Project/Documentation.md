@@ -49,6 +49,7 @@ This project is a RESTful web service designed to manage books, authors, custome
 #### Endpoints:
 - **POST /orders**: Create a new order.
 - **GET /orders**: List all orders or fetch details by ID.
+- **PUT /orders/{id}**: Update an order with the given id.
 - **DELETE /orders/{id}**: Cancel an order.
 
 #### Logic:
@@ -56,6 +57,7 @@ This project is a RESTful web service designed to manage books, authors, custome
 - Stock is verified before creating an order to ensure availability.
 - Total price is calculated based on the quantity and price of each book.
 - Orders cannot be created for nonexistent customers , or nonexistent books.
+- When updating or deleting and order ,we make sure the book stocks are updated as well.
 
 ### 5. Report Management
 
