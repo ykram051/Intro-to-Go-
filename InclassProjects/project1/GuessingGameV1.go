@@ -1,4 +1,4 @@
-package project1
+package main
 
 import (
 	"fmt"
@@ -13,9 +13,9 @@ func v1() {
 	for {
 		var userguess int
 		fmt.Scan(&userguess)
-		if userguess>100 || userguess<0 {
+		if userguess > 100 || userguess < 0 {
 			fmt.Println("Not a valid number , Try again with a number between 0 and 100 ( inclusive)")
-		}else if userguess < goal {
+		} else if userguess < goal {
 			fmt.Printf("Your guess is too low , Try again :")
 			attempt += 1
 		} else if userguess > goal {
