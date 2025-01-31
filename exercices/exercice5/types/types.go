@@ -1,7 +1,4 @@
-package main
-
-
-import "fmt"
+package types
 
 type Vehicule struct{
 	Make string 
@@ -25,33 +22,6 @@ type Printable interface{
 	Details() 
 }
 
-func main(){
-
-	car := Car{
-		CarVehicule: Vehicule{
-			Make:  "Toyota",
-			Model: "Corolla",
-			Year:  2020,
-		},
-		NumOfDoors: 4,
-	}
-
-	truck := Truck{
-		TruckVehicule: Vehicule{
-			Make:  "Ford",
-			Model: "F-150",
-			Year:  2018,
-		},
-		PayloadCapacity: 1000,
-	}
-
-	fmt.Printf("Car insurance : %f ",car.CalculateInsurance())
-	fmt.Printf("Truck insurance : %f ", truck.CalculateInsurance())
-
-	var listOfprintables []Printable
-	listOfprintables = append(listOfprintables,car,truck)
-	PrintAll(listOfprintables)
-}
 
 func PrintAll(printables []Printable){
 	for i,_ := range printables {
