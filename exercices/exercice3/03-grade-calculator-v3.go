@@ -6,6 +6,7 @@ func main() {
 	var total float64 = 0
 	var num float64 = 0
 	var tempgrade float64
+	var sum float64 = 0
 
 	for tempgrade != -1 {
 		total += tempgrade
@@ -15,7 +16,7 @@ func main() {
 	}
 	var count int 
 	var grade float64
-	for count=1 ,grade>=0,i++{
+	for count = 1; grade >= 0; count++ {
 		fmt.Println("enter grade ",count,": ")
 		fmt.Scanln(&grade)
 		if(grade<0 || grade>100){
@@ -23,12 +24,9 @@ func main() {
 	count--
 	continue
 	}
+		
 		sum+=grade
 }
-	}
-
-
-
 
 	aver := average3(total, num)
 	fmt.Printf("The average is : %f \n", aver)
