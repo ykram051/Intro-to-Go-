@@ -1,0 +1,42 @@
+{
+    "Students": [
+        {
+            "id": 0,
+            "name": "whatever hello",
+            "age": 22,
+            "major": "Software Engineering",
+            "address": {
+                "street": "456 Elm St",
+                "city": "Othertown",
+                "state": "Otherstate",
+                "postal_code": "67890"
+            },
+            "courses": [
+                {
+                    "code": "CS201",
+                    "name": "Data Structures",
+                    "credit": 4
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "samia",
+            "age": 22,
+            "major": "Software Engineering",
+            "address": {
+                "street": "456 Elm St",
+                "city": "Othertown",
+                "state": "Otherstate",
+                "postal_code": "67890"
+            },
+            "courses": [
+                {
+                    "code": "CS201",
+                    "name": "Data Structures",
+                    "credit": 4
+                }
+            ]
+        }
+    ]
+}
